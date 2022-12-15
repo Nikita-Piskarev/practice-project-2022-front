@@ -109,18 +109,25 @@ class Header extends React.Component {
         <div className={styles.loginSignnUpHeaders}>
           <div className={styles.numberContainer}>
             <img src={`${CONSTANTS.STATIC_IMAGES_PATH}phone.png`} alt="phone" />
-            <span>(877)&nbsp;355-3585</span>
+            <a
+              style={{ textDecoration: 'none', color: 'black' }}
+              href="tel:(877)355-3585"
+            >
+              (877)&nbsp;355-3585
+            </a>
           </div>
           <div className={styles.userButtonsContainer}>
             {this.renderLoginButtons()}
           </div>
         </div>
         <div className={styles.navContainer}>
-          <img
-            src={`${CONSTANTS.STATIC_IMAGES_PATH}blue-logo.png`}
-            className={styles.logo}
-            alt="blue_logo"
-          />
+          <Link to="/">
+            <img
+              src={`${CONSTANTS.STATIC_IMAGES_PATH}blue-logo.png`}
+              className={styles.logo}
+              alt="blue_logo"
+            />
+          </Link>
           <div className={styles.leftNav}>
             <div className={styles.nav}>
               <ul>
@@ -165,96 +172,96 @@ class Header extends React.Component {
                   />
                   <ul>
                     <li>
-                      <a href="http://www.google.com">HOW IT WORKS</a>
+                      <a href="http://www.google.com">How it works</a>
                     </li>
                     <li>
-                      <a href="http://www.google.com">PRICING</a>
+                      <a href="http://www.google.com">Pricing</a>
                     </li>
                     <li>
-                      <a href="http://www.google.com">AGENCY SERVICE</a>
+                      <a href="http://www.google.com">Agency service</a>
                     </li>
                     <li>
-                      <a href="http://www.google.com">ACTIVE CONTESTS</a>
+                      <a href="http://www.google.com">Active contests</a>
                     </li>
                     <li>
-                      <a href="http://www.google.com">WINNERS</a>
+                      <a href="http://www.google.com">Winners </a>
                     </li>
                     <li>
-                      <a href="http://www.google.com">LEADERBOARD</a>
+                      <a href="http://www.google.com">Leaderboard</a>
                     </li>
                     <li className={styles.last}>
-                      <a href="http://www.google.com">BECOME A CREATIVE</a>
+                      <a href="http://www.google.com">Become acreative</a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <span>Our Work</span>
+                  <span>OUR WORK</span>
                   <img
                     src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`}
                     alt="menu"
                   />
                   <ul>
                     <li>
-                      <a href="http://www.google.com">NAMES</a>
+                      <a href="http://www.google.com">Names</a>
                     </li>
                     <li>
-                      <a href="http://www.google.com">TAGLINES</a>
+                      <a href="http://www.google.com">Taglines</a>
                     </li>
                     <li>
-                      <a href="http://www.google.com">LOGOS</a>
+                      <a href="http://www.google.com">Logos</a>
                     </li>
                     <li className={styles.last}>
-                      <a href="http://www.google.com">TESTIMONIALS</a>
+                      <a href="http://www.google.com">Testiomonaials</a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <span>Names For Sale</span>
+                  <span>NAMES FOR SALE</span>
                   <img
                     src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`}
                     alt="menu"
                   />
                   <ul>
                     <li>
-                      <a href="http://www.google.com">POPULAR NAMES</a>
+                      <a href="http://www.google.com">Popular names</a>
                     </li>
                     <li>
-                      <a href="http://www.google.com">SHORT NAMES</a>
+                      <a href="http://www.google.com">Short names</a>
                     </li>
                     <li>
-                      <a href="http://www.google.com">INTRIGUING NAMES</a>
+                      <a href="http://www.google.com">Intriguing names</a>
                     </li>
                     <li>
-                      <a href="http://www.google.com">NAMES BY CATEGORY</a>
+                      <a href="http://www.google.com">Names by category</a>
                     </li>
                     <li>
-                      <a href="http://www.google.com">VISUAL NAME SEARCH</a>
+                      <a href="http://www.google.com">Visual name search </a>
                     </li>
                     <li className={styles.last}>
-                      <a href="http://www.google.com">SELL YOUR DOMAINS</a>
+                      <a href="http://www.google.com">Sell your domains </a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <span>Blog</span>
+                  <span>BLOG</span>
                   <img
                     src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`}
                     alt="menu"
                   />
                   <ul>
                     <li>
-                      <a href="http://www.google.com">ULTIMATE NAMING GUIDE</a>
+                      <a href="http://www.google.com">Ultimate naming guide</a>
                     </li>
                     <li>
                       <a href="http://www.google.com">
-                        POETIC DEVICES IN BUSINESS NAMING
+                        Poetic devices in business naming
                       </a>
                     </li>
                     <li>
-                      <a href="http://www.google.com">CROWDED BAR THEORY</a>
+                      <a href="http://www.google.com">Crowded bar theory</a>
                     </li>
                     <li className={styles.last}>
-                      <a href="http://www.google.com">ALL ARTICLES</a>
+                      <a href="http://www.google.com">All articles</a>
                     </li>
                   </ul>
                 </li>
