@@ -48,6 +48,8 @@ class ContestForm extends React.Component {
         this.props.getData({ characteristic1: 'brandStyle' });
         break;
       }
+      default:
+        break;
     }
   };
 
@@ -56,6 +58,15 @@ class ContestForm extends React.Component {
   }
 
   render() {
+    const initialValues = {
+      title: '',
+      industry: '',
+      focusOfWork: '',
+      targetCustomer: '',
+      file: '',
+      ...variableOptions[this.props.contestType],
+      ...this.props.initialValues,
+    };
     const { isFetching, error } = this.props.dataForContest;
     if (error) {
       return <TryAgain getData={this.getPreference} />;
@@ -67,15 +78,7 @@ class ContestForm extends React.Component {
       <>
         <div className={styles.formContainer}>
           <Formik
-            initialValues={{
-              title: '',
-              industry: '',
-              focusOfWork: '',
-              targetCustomer: '',
-              file: '',
-              ...variableOptions[this.props.contestType],
-              ...this.props.initialValues,
-            }}
+            initialValues={initialValues}
             onSubmit={this.props.handleSubmit}
             validationSchema={Schems.ContestSchem}
             innerRef={this.props.formRef}
