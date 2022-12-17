@@ -148,7 +148,7 @@ class Header extends React.Component {
                       <a href="http://www.google.com">Tech</a>
                     </li>
                     <li className={styles.last}>
-                      <a href="http://www.google.com">More Categories</a>
+                      <a href="http://www.google.com">More categories</a>
                     </li>
                   </ul>
                 </li>
