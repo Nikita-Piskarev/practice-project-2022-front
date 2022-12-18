@@ -35,6 +35,63 @@ const CONSTANTS = {
     REGISTER: 'REGISTER',
     LOGIN: 'LOGIN',
   },
+
+  HEADER_NAV_LINK: 'http://www.google.com',
+  CONTEST_PRICING_LINK_PATH: '/pricing',
+
+  HEADER_LEFT_NAV_TEXT_ITEMS: [
+    {
+      TITLE: 'NAME IDEAS',
+      ITEMS: [
+        'Beauty',
+        'Contest Pricing',
+        'Consulting',
+        'E-Commerce',
+        'Fashion & Clothing',
+        'Finance',
+        'Real Estate',
+        'Tech',
+        'More categories',
+      ],
+    },
+    {
+      TITLE: 'CONTESTS',
+      ITEMS: [
+        'How it works',
+        'Pricing',
+        'Agency service',
+        'Active contests',
+        'Winners',
+        'Leaderboard',
+        'Become acreative',
+      ],
+    },
+    {
+      TITLE: 'OUR WORK',
+      ITEMS: ['Names', 'Taglines', 'Logos', 'Testiomonaials'],
+    },
+    {
+      TITLE: 'NAMES FOR SALE',
+      ITEMS: [
+        'Popular names',
+        'Short names',
+        'Intriguing names',
+        'Names by category',
+        'Visual name search',
+        'Sell your domains',
+      ],
+    },
+    {
+      TITLE: 'BLOG',
+      ITEMS: [
+        'Ultimate naming guide',
+        'Poetic devices in business naming',
+        'Crowded bar theory',
+        'All articles',
+      ],
+    },
+  ],
+
   HEADER_ANIMATION_TEXT: [
     'a Company',
     'a Brand',
