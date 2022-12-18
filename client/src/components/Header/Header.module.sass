@@ -71,11 +71,8 @@
               width: 100%
               padding: 0 15px
 
-              // a
-              //   width: 100%
-
             &:hover
-              span
+              h1
                 color: #f27e51
 
               ul
@@ -95,16 +92,15 @@
               width: 160px
               display: none
 
-              .last
-                width: 100%
-                box-sizing: border-box
-                border-top: 1px solid aquamarine
-
               li
                 box-sizing: border-box
                 width: 100%
                 display: flex
                 justify-content: flex-start
+
+                &:last-child
+                  box-sizing: border-box
+                  border-top: 1px solid aquamarine
 
                 &:hover
                   background: #f9fafb
@@ -119,7 +115,7 @@
                   &:hover
                     color: #f27e51
 
-            span
+            h1
               color: #495d8b
               font-size: 15px
               font-weight: 300
