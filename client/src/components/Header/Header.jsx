@@ -80,23 +80,23 @@ class Header extends React.Component {
       </>
     );
   };
-  leftNavItemRender = (item) => (
-    <ul>
+  leftNavItemRender = (item, i) => (
+    <ul key={(i, item.TITLE)}>
       <li>
         <h1>{item.TITLE}</h1>
         <img src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`} alt="menu" />
 
         <ul>
-          {item.ITEMS.map((i) => (
-            <li>
+          {item.ITEMS.map((value, i) => (
+            <li key={(i, value)}>
               <Link
                 to={
-                  i === 'Contest Pricing'
+                  value === 'Contest Pricing'
                     ? CONSTANTS.CONTEST_PRICING_LINK_PATH
                     : CONSTANTS.HEADER_NAV_LINK
                 }
               >
-                {i}
+                {value}
               </Link>
             </li>
           ))}
