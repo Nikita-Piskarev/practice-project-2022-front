@@ -102,6 +102,7 @@ const CONSTANTS = {
       SERVICES: ['Matching .com URL'],
       OPTION_SERVICES: ['Expected 300+ Entries'],
       TEXT_BTN: 'Start',
+      COLOR: '#e0b48d',
     },
     {
       TITLE: 'Gold',
@@ -119,6 +120,7 @@ const CONSTANTS = {
       ],
       OPTION_SERVICES: ['Expected 600+ Entries', 'Partial Refund Option'],
       TEXT_BTN: 'Start',
+      COLOR: '#e8b954',
     },
     {
       TITLE: 'Platinum',
@@ -141,6 +143,7 @@ const CONSTANTS = {
       ],
       OPTION_SERVICES: ['Expected 1000+ Entries', 'Partial Refund Option'],
       TEXT_BTN: 'Start',
+      COLOR: '#555',
     },
     {
       TITLE: 'Managed',
@@ -152,6 +155,8 @@ const CONSTANTS = {
         'With significantly more validation services, professional brief creation, and daily management of your contest by your Branding Expert, you"ll receive an enhanced branding experience to closeout your branding project.',
         'Learn More about Managed Contest Service',
       ],
+      TEXT_BTN: 'Start',
+      COLOR: '#28d2d0',
     },
   ],
 
